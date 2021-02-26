@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Предложения");
 
 ?><?$APPLICATION->IncludeComponent(
 	"citrus:realty.catalog",
-	".default",
+	"custom",
 	array(
 		"IBLOCK_TYPE" => "realty",
 		"IBLOCK_ID" => "offers",

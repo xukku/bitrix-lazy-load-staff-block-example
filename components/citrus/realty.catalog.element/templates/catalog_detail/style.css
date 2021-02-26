@@ -1,0 +1,539 @@
+@media all {
+    .object-info {
+        padding-left: 20px;
+    }
+
+    .object-info .h4 {
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+    }
+
+    .object-info .object-info_footer {
+        display: flex;
+    }
+
+    .object-info .btn-primary {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .object-footer {
+        margin: 30px 0 -15px 0;
+        font-size: 0;
+    }
+
+    .object-footer .btn {
+        margin: 0 15px 15px 0;
+    }
+
+    .object-text {
+        margin-top: 30px;
+    }
+
+    .object-address {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .object-option.dl-menu .dl_element a {
+        text-decoration: none;
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        display: inline-block;
+        margin-bottom: -1px;
+    }
+
+    .object-option.dl-menu .dl_element a:hover {
+        color: var(--hover-color);
+        border-bottom: 1px solid var(--hover-color);
+    }
+
+    .object-price_new {
+        display: inline-block;
+        text-align: center;
+        line-height: 1;
+        margin: 35px 0;
+    }
+
+    .object-price_new span {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .object-price_new span.btn-icon {
+        font-size: 30px;
+        vertical-align: -10px;
+    }
+
+    .object-option.dl-menu span {
+        padding-top: 20px;
+        line-height: 1.2;
+        border-bottom: 1px solid #d9d9d9;
+        align-self: flex-end;
+    }
+
+    .object-option.dl-menu span:first-child {
+        padding-right: 14px;
+        width: 35%;
+        flex-shrink: 0;
+    }
+
+    .object-option.dl-menu .dl_element {
+        display: flex;
+    }
+
+    .object-gallery {
+        position: relative;
+    }
+
+    .object-gallery-previews {
+        position: relative;
+    }
+
+    .object-gallery-previews .embed-responsive-item {
+        object-fit: cover;
+    }
+
+    .object-gallery-previews figure {
+        background-color: #f3f1ec;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        display: none;
+        opacity: 0;
+    }
+
+    .object-gallery-previews figure.is-active {
+        display: block;
+        margin: 0;
+        opacity: 1;
+    }
+
+    .object-gallery-previews figcaption {
+        display: none;
+    }
+
+    .object-gallery-thumbs a.gallery-thumbs img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        max-height: 90%;
+        max-width: 90%;
+    }
+
+    .object-gallery-thumbs {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .object-gallery-thumbs a.gallery-thumbs {
+        display: block;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        position: relative;
+        background-color: #f3f1ec;
+        border: 2px solid transparent;
+        margin-bottom: 15px;
+    }
+
+    .object-gallery-thumbs .swiper-slide {
+        width: 33.3333333%;
+    }
+
+    .object-gallery-thumbs .swiper-container-horizontal > .swiper-scrollbar {
+        left: 0;
+        width: 100%;
+    }
+
+    .image-actions {
+        position: relative;
+        padding: 16px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 5px;
+    }
+
+    .image-actions__link {
+        font-size: 13px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        padding: 0 10px;
+    }
+
+    .image-actions__link-icon {
+        display: flex;
+        font-size: 24px;
+    }
+
+    .image-actions__link-text {
+        margin-left: 14px;
+        text-decoration: underline;
+    }
+
+    .personal_manager_link,
+    .mortgage_link {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 28px;
+        height: 60px;
+        vertical-align: middle;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .personal_manager_link i,
+    .mortgage_link i {
+        font-size: 40px;
+    }
+
+    .personal_manager_link .btn-label,
+    .mortgage_link .btn-label {
+        margin-left: 8px;
+        text-decoration: underline;
+    }
+
+    .desc_complex .section__content .section__content_img {
+        flex-shrink: 0;
+        margin-right: 50px;
+    }
+
+    .desc_complex .section__content .title {
+        font-size: 35px;
+        font-weight: 300;
+        font-family: 'Merriweather', serif;
+    }
+
+    .desc_complex .section__content {
+        display: flex;
+    }
+
+    .desc_complex .section__content p + ul {
+        margin-top: -15px;
+    }
+
+    .desc_complex .section__content .btn_block {
+        margin-top: 40px;
+    }
+
+    .share-social {
+        position: relative;
+    }
+
+    .share-social__popup {
+        position: absolute;
+        top: 55px;
+        display: none;
+        min-width: 250px;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .js-popup.js-popup_open .share-social__popup {
+        display: block;
+    }
+
+    .share-social__popup:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: calc(50% - 10px);
+        border: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+    }
+
+    .share-social__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .share-social__title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .share-social__social-component {
+        margin-bottom: 20px;
+    }
+
+    .share-social__print-link {
+        font-size: 13px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .share-social__link-icon {
+        font-size: 18px;
+    }
+
+    .share-social__link-text {
+        margin-left: 10px;
+        text-decoration: underline;
+    }
+
+    .js-popup__close {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-size: 30px;
+        line-height: 30px;
+        background-color: transparent;
+        border: none;
+        color: #999;
+        transform: rotate(45deg);
+    }
+
+    .share-social__icon {
+        width: 25px;
+        min-width: 25px;
+        height: 25px;
+        fill: var(--primary-color);
+    }
+
+	.embed-responsive-item.print {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+    .object-option.dl-menu dd, .object-option.dl-menu dt, .object-address {
+        /*font-size: 14px;*/
+    }
+
+    .object-price_new span, .object-price_new span.btn-icon, .object-price_new span.btn-label {
+        font-size: 20px;
+    }
+
+    .object-text {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .image-actions__link {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .image-actions__link-text {
+        margin-left: 0;
+    }
+
+    .share-social__link {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .share-social__popup {
+        position: absolute;
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .desc_complex .section__content {
+        flex-direction: column;
+    }
+
+    .desc_complex .section__content .section__content_img {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .desc_complex .section__content .btn_block {
+        text-align: center;
+    }
+
+    .image-actions__link {
+        justify-content: center;
+    }
+
+    .image-actions__link-text {
+        display: none;
+    }
+
+    .image-actions__link-icon {
+        font-size: 30px;
+    }
+
+    .object-option.dl-menu span {
+        font-size: 14px;
+    }
+
+    .object-info {
+        padding: 0;
+    }
+
+    .share-social__popup {
+        top: 55px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .object-option.dl-menu dd, .object-option.dl-menu dt {
+        width: 50%;
+    }
+
+    .object-option.dl-menu span:first-child {
+        padding-right: 14px;
+        width: 35%;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    .object-option.dl-menu span:last-child {
+        flex-grow: 1;
+        text-align: right;
+        vertical-align: bottom;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .share-social__popup {
+        right: calc(50% - 37px);
+    }
+
+    .share-social__popup:before {
+        left: auto;
+        right: 27px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .personal_manager_link,
+    .mortgage_link {
+        margin-left: 20px;
+        height: 50px;
+    }
+
+    .object-footer .btn {
+        margin: 0 0 15px;
+        float: left;
+        width: auto;
+        clear: left;
+    }
+
+    .object-footer {
+        overflow: hidden;
+    }
+
+    .object-footer .btn {
+        width: 100%;
+    }
+
+    .image-actions {
+        padding: 10px 0;
+    }
+
+    .object-option.dl-menu span {
+        font-size: 13px;
+    }
+
+    .share-social {
+        position: static;
+    }
+
+    .share-social__popup {
+        left: 0;
+        right: 0;
+    }
+
+    .share-social__popup:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .object-info .object-info_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal_manager_link,
+    .mortgage_link {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .object-gallery-thumbs .swiper-slide {
+        width: 50%;
+    }
+}
+
+
+@media print {
+	@page { margin: 1cm; }
+	body {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	.section__border-top,
+	.main-menu-line .jk-menu-w,
+	.main-menu-line,
+	.btn {
+		display: none !important;
+	}
+
+	.embed-responsive-item.print {
+		display: block !important;
+	}
+
+	.h__top._fixed {
+		position: static !important;
+		margin-bottom: 20px;
+	}
+	.section-description {
+		line-height: 30px;
+	}
+	.section._with-padding .section-inner {
+		padding-top: 0 !important;
+		padding-bottom: 30px !important;
+	}
+	.object-option.dl-menu {
+		columns: 2;
+	}
+	.object-option.dl-menu span:first-child {
+		min-width: 160px;
+	}
+	.object-info,
+	.page-break-inside {
+		page-break-inside: avoid;
+	}
+	.desc_complex .section__content {
+		display: block;
+	}
+	.desc_complex .section__content .section__content_img {
+		text-align: center;
+	}
+	.section__content_text {
+		font: 15px/1.5 Tahoma,serif !important;
+		margin-top: 15px;
+	}
+	.catalog-slider.p__swiper .swiper-slide.catalog-slider__item {
+		width: calc(50% - 15px) !important;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	.manager-row {
+		box-shadow: none !important;
+	}
+}

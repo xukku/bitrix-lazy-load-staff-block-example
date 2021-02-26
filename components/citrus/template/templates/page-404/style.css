@@ -1,0 +1,17 @@
+
+@media all {
+	.page-404 {
+		text-align: center;
+	}
+	.page-404__image {
+		max-width: 80%;
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
+}
+@media (max-width: 767px) {
+	.page-404__image {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+}

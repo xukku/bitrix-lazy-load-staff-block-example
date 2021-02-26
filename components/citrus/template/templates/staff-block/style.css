@@ -1,0 +1,170 @@
+@media all {
+  .manager-row {
+    display: flex;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .manager-left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .manager-right {
+    width: 396px;
+    background-color: #f5f5f5;
+  }
+
+  .manager-left {
+    padding: 50px
+  }
+
+  .manager-right {
+    padding: 50px 10px;
+  }
+
+  .manager-img-container {
+    margin-right: 30px;
+    width: 365px;
+    min-width: 365px;
+  }
+
+  .manager__name {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .manager__name b {
+    text-transform: uppercase;
+  }
+
+  .manafer_post {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 16px;
+  }
+
+  .manager-right .h3 {
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .manager-right .agree-block__text {
+    text-align: left;
+  }
+
+  .manager-row .form-group-btn .input-container,
+  .manager-row button.btn {
+    width: 100%;
+  }
+
+  .succinctly_manager {
+    margin-top: 40px;
+  }
+
+  .about_manager .succinctly_manager .about_title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .about_manager .section__header .h2 {
+    font-size: 35px;
+    font-weight: 100;
+  }
+
+  .manager__properties > .properties {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .manager-img-container {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .manager-row {
+    flex-direction: column;
+  }
+
+  .manager-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .manager-right .section-footer {
+    margin-top: 0;
+  }
+
+  .manager-left {
+    padding: 25px;
+  }
+
+  .manager-img-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .manager-left {
+    flex-direction: column;
+  }
+
+  .manager-right {
+    padding: 30px 10px;
+  }
+
+  .manager__content {
+    padding-top: 0;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .manager-img-container {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .manager__name {
+    margin-top: -4px;
+    margin-bottom: 10px;
+  }
+
+  .manafer_post {
+    margin-bottom: 10px;
+  }
+
+  .manager__name b {
+    display: block;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 479px) {
+  .manager-left {
+    padding: 10px;
+  }
+
+  .manager-img {
+    max-height: 300px;
+  }
+
+  .manager__name b {
+    display: inline;
+  }
+}
+
+@media (max-width: 360px) {
+  .manager-left {
+    padding: 0;
+  }
+
+  .manager__content {
+    padding: 20px;
+    margin: 0;
+  }
+}

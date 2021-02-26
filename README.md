@@ -1,9 +1,15 @@
 
 # Содержимое папки /local/
 
-Пример "ленивой" подгрузки блока "Ваш персональный менеджер" на детальной странице объекта - реализация загрузки компонента через ajax.
+Пример "ленивой" подгрузки блока - реализация загрузки компонента через ajax.
 
 ## Реализация
+
+Загрузка блока "Написать нам" на странице контактов: в простом случае достаточно заменить вызов компонента
+
+https://github.com/whateveruse/bitrix-lazy-load-staff-block-example/blob/master/_public/sect_block_contact_us.php
+
+Загрузка блока "Ваш персональный менеджер" на детальной странице объекта:
 
 https://github.com/whateveruse/bitrix-lazy-load-staff-block-example/blob/master/components/citrus/template/templates/lazy/script.es6.js#L27
 

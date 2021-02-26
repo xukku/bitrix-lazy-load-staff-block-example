@@ -265,7 +265,7 @@ $printProp = function ($propertyCode, $emptyPlaceholder = '&mdash;') use (&$arRe
 						                $v = strip_tags($v);
 					                }, $arProperty["DISPLAY_VALUE"]);
 
-					                // добавим обознвчение единиц для площади
+					                // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					                if (stripos($pid, 'land_area') !== false)
 						                foreach ($arProperty["DISPLAY_VALUE"] as &$val)
 							                $val .= GetMessage("CITRUS_REALTY_HUNDRED_SQR_METERS");
@@ -402,6 +402,8 @@ $printProp = function ($propertyCode, $emptyPlaceholder = '&mdash;') use (&$arRe
 
 $this->SetViewTarget('element-page-bottom');
 
+//FIX
+/*
 if ($arResult['CONTACT'])
 {
 	?><a id="personal_manager"></a><?php
@@ -425,3 +427,4 @@ if ($arResult['CONTACT'])
 		['HIDE_ICONS' => 'Y']
 	);
 }
+*/

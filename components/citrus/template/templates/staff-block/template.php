@@ -5,14 +5,19 @@ use Bitrix\Main\Localization\Loc;
 $this->setFrameMode(true);
 
 $arItem = $arParams['~ITEM'];
+$useLazyLoad = true;
+if (!empty($arParams['LAZY_LOAD']) && ($arParams['LAZY_LOAD'] == 'N'))
+{
+	$useLazyLoad = false;
+}
 
 ?>
 
 <div class="manager-row">
 	<div class="manager-left print-no-break">
 		<div class="manager-img-container">
-			<img class="manager-img lazy"
-			     data-src="<?=$arItem['PREVIEW_PICTURE']['src']?>"
+			<img class="manager-img <?= $useLazyLoad? 'lazy' : '' ?>"
+			     <?= $useLazyLoad? 'data-' : '' ?>src="<?=$arItem['PREVIEW_PICTURE']['src']?>"
 			     alt="<?=$arItem['NAME']?>">
 		</div>
 		<div class="manager__content">

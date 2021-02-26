@@ -10,16 +10,16 @@ use Citrus\ArealtyPro\Manage\ComponentUtils;
 
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-/** @var array $arParams Параметры, чтение/изменение не затрагивает одноименный член компонента. */
-/** @var array $arResult Результат, чтение/изменение не затрагивает одноименный член класса компонента. */
-/** @var string $componentPath Путь к папке с компонентом от DOCUMENT_ROOT (например /bitrix/components/bitrix/iblock.list). */
-/** @var CBitrixComponent $component Ссылка на $this. */
-/** @var CBitrixComponent $this Ссылка на текущий вызванный компонент, можно использовать все методы класса. */
-/** @var string $epilogFile Путь к файлу component_epilog.php относительно DOCUMENT_ROOT */
-/** @var string $templateName Имя шаблона компонента (например: .dеfault) */
-/** @var string $templateFile Путь к файлу шаблона от DOCUMENT_ROOT (напр. /bitrix/components/bitrix/iblock.list/templates/.default/template.php) */
-/** @var string $templateFolder Путь к папке с шаблоном от DOCUMENT_ROOT (напр. /bitrix/components/bitrix/iblock.list/templates/.default) */
-/** @var array $templateData Обратите внимание, таким образом можно передать данные из template.php в файл component_epilog.php, причем эти данные закешируются и будут доступны в component_epilog.php на каждом хите */
+/** @var array $arParams пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. */
+/** @var array $arResult пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. */
+/** @var string $componentPath пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ DOCUMENT_ROOT (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ /bitrix/components/bitrix/iblock.list). */
+/** @var CBitrixComponent $component пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ $this. */
+/** @var CBitrixComponent $this пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. */
+/** @var string $epilogFile пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ component_epilog.php пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ DOCUMENT_ROOT */
+/** @var string $templateName пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: .dпїЅfault) */
+/** @var string $templateFile пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ DOCUMENT_ROOT (пїЅпїЅпїЅпїЅ. /bitrix/components/bitrix/iblock.list/templates/.default/template.php) */
+/** @var string $templateFolder пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ DOCUMENT_ROOT (пїЅпїЅпїЅпїЅ. /bitrix/components/bitrix/iblock.list/templates/.default) */
+/** @var array $templateData пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ template.php пїЅ пїЅпїЅпїЅпїЅ component_epilog.php, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ component_epilog.php пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ */
 /** @var @global CMain $APPLICATION */
 /** @var @global CUser $USER */
 
@@ -31,6 +31,9 @@ Helper::setLastSection($arResult["IBLOCK_SECTION_ID"], $arResult['DEAL_TYPE'] ? 
 Loc::loadMessages(__DIR__ . '/template.php');
 
 $APPLICATION->SetPageProperty('SHOW_TITLE', 'N');
+
+//FIX
+$APPLICATION->SetPageProperty('MANAGER_CONTACT_ID', $arResult['CONTACT']['ID']);
 
 $jsMessages = [
 	'CITRUS_AREALTY_PDF_SEND_URL' => $arParams["PDF_DETAIL_URL"],

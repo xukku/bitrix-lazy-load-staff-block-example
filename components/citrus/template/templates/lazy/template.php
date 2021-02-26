@@ -4,7 +4,9 @@ $this->setFrameMode(true);
 
 ?>
 
-<div id="<?= $arParams['DATA']['COMPONENT_HTML_ID'] ?>">...</div>
+<div id="<?= $arParams['DATA']['COMPONENT_HTML_ID'] ?>">
+	<div align="center" style="margin-bottom: 40px;"><img width="20" src="<?= $templateFolder ?>/images/loading.gif"></div>
+</div>
 
 <script>
 	new BX.Citrus.Template.Component(<?= CUtil::PhpToJSObject([

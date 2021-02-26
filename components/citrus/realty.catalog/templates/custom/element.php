@@ -51,7 +51,7 @@ $showDeactivated = (\CModule::IncludeModule('citrus.arealtypro')
 
 <?$elementId = $APPLICATION->IncludeComponent(
 	"citrus:realty.catalog.element",
-	"catalog_detail",
+	"catalog_detail_custom",
 	array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -273,3 +273,26 @@ if (0 < $elementId && 'Y' == $arParams['DETAIL_SHOW_SIMILAR_OFFERS'])
 
 // заполняется в шаблоне bitrix:catalog.element
 $APPLICATION->ShowViewContent('element-page-bottom');
+
+//FIX
+$contactId = $APPLICATION->GetProperty('MANAGER_CONTACT_ID');
+if ($contactId)
+{
+	?><a id="personal_manager"></a><?php
+
+	$APPLICATION->IncludeComponent(
+	    "citrus:template",
+	    "lazy",
+	    array(
+	    	"DATA" => [
+	    		"COMPONENT" => "citrus:template",
+		    	"COMPONENT_TEMPLATE" => "staff-block-ajax",
+		    	"COMPONENT_HTML_ID" => "catalog_detail_contact_staff_block",
+		        "CACHE_TYPE" => "N",
+				"CONTACT_ID" => $contactId,
+	    	],
+	    ),
+	    false,
+	    array("HIDE_ICONS" => "Y")
+	);
+}
